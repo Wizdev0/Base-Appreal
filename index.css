@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.card{
+    width: 70%;
+    background-image: url("Assets/bg-pattern-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    background-color: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+}
+
+.hero-desktop{
+    width: 50%;
+    height: 100vh;
+    background-image: url("Assets/hero-desktop.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.logo-img img {
+   margin-left: 150px;
+}
+
+.write-up{
+    margin-top: 80px;
+    margin-left: 150px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.write-up-h1{
+    width: 50%;
+    line-height: 1.2;
+    
+}
+
+.h1{
+    font-size: 75px;
+    letter-spacing: 17px;
+    font-weight: 400;
+    
+}
+
+.big-pink{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.write-sub{
+    margin-top: 25px;
+    width: 70%;
+    line-height: 1.5;
+}
+
+
+.sub-p{
+    font-size: 16px;
+    color: hsl(0, 36%, 70%);
+}
+
+.sign-up-box{
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+.input{
+    padding: 18px;
+    width: 70%;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid hsl(0, 36%, 70%);
+   
+}
+
+.input-img{
+    background-image: url("Assets/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 70px center;
+    background-size: 20px;
+
+  
+}
+
+.input-img.active{
+    background: none;
+}
+
+::placeholder{
+    color: hsl(0, 36%, 70%);
+
+}
+
+.input:focus{
+    border: 2px solid pink;
+}
+
+.input-p{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 30px;
+    color: hsl(0, 93%, 68%);
+    display: none;
+
+}
+
+
+
+.sign-up-btn{
+    margin-left: -50px;
+    padding: 18px;
+    border-radius: 30px;
+    width: 100px;
+    border: 1px solid hsl(0, 36%, 70%);
+    background: hsl(0, 97%, 71%);
+    box-shadow: 0px 3px 15px  hsl(0, 97%, 75%);
+
+    transition: all 1s ease-out 0s;
+}
+
+.sign-up-btn:hover{
+    cursor: pointer;
+    background-color: rgb(253, 147, 165);
+    scale: 1.1;
+}
+
+.hero-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: block;
+    }
+
+
+
+.card{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-image: none;
+ padding: 0;
+ margin: 0 auto;
+ margin-top: 40px;
+ margin-bottom: 90px;
+
+
+}
+
+.hero-desktop{
+  display: none;
+}
+
+.hero-mobile{
+    display: flex;
+    height: 40vh;
+    width: 100vw;
+    background-image: url("Assets/hero-mobile.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+
+}
+
+.logo-img img {
+    margin-left: -160px;
+    margin-bottom: 20px;
+    width: 120px;
+}
+
+.write-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+
+    margin-top: 60px;
+}
+
+.write-up-h1{
+    width: 100%;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.h1{
+    font-size: 40px;
+    letter-spacing: 17px;
+    font-weight: 600;
+   text-align: center;
+    
+}
+
+.big-pink{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.write-sub{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+
+
+.sub-p{
+    font-size: 16px;
+    color: hsl(0, 36%, 70%);
+    text-align: center;
+}
+
+.sign-up-box{
+    margin-top: 30px;
+    display: flex;
+   
+    
+}
+
+.input{
+    padding: 18px;
+    width: 80vw;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid hsl(0, 36%, 70%);
+
+   
+}
+
+.input-img{
+    background-image: url("Assets/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 70px center;
+    background-size: 20px;
+
+  
+}
+
+.input-img.active{
+    background: none;
+}
+
+::placeholder{
+    color: hsl(0, 36%, 70%);
+    font-size: 17px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.input:focus{
+    border: 2px solid pink;
+}
+
+.input-p{
+    margin-top: 10px;
+    font-size: 16px;
+    margin-left: 30px;
+    color: hsl(0, 93%, 68%);
+    display: none;
+    
+
+}
+
+
+
+
+.sign-up-btn{
+    margin-left: -50px;
+    padding: 18px;
+    border-radius: 30px;
+    border: 1px solid hsl(0, 36%, 70%);
+    background: hsl(0, 97%, 71%);
+    box-shadow: 0px 3px 15px  hsl(0, 97%, 75%);
+    
+    transition: all 1s ease-out 0s;
+}
+
+.sign-up-btn:hover{
+    cursor: pointer;
+    background-color: rgb(253, 147, 165);
+    scale: 1.1;
+}
+
+.end{
+    margin-bottom: 90px;
+}
+}
