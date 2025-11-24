@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Base-Appreal.com](https://wizdev0.github.io/Base-Appreal/)
 
 ## My process
 
@@ -126,4 +126,4 @@ As usual, javaScript development continues........
 
 ## Author
 - Frontend Mentor - [@Wizdev0](https://www.frontendmentor.io/profile/Wizdev0)
-- Twitter - [@otutech](https://www.twitter.com/otutech)ction's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Twitter - [@otutech](https://www.twitter.com/otutech)
